@@ -14,7 +14,7 @@
             <ul class="nav navbar-nav menu_nav justify-content-center">
               <li class="nav-item"><a class="nav-link text-uppercase" href="index.php">Home</a></li> 
               <li class="nav-item"><a class="nav-link text-uppercase" href="login.php">Sou um escritor</a>
-              <li class="nav-item"><a class="nav-link text-uppercase" href="painel_admin.php">Painel de Administraçāo</a>
+              <li class="nav-item"><a class="nav-link text-uppercase" href="painel.php">Painel de Administraçāo</a>
             </ul>
             <ul class="nav navbar-nav navbar-right navbar-social">
               <li><a href="#"><i class="ti-facebook"></i></a></li>

@@ -7,16 +7,17 @@
         try {
             require 'req/conexao.php';
 
+            //irá manda o dados que o cara digitar
             $select = $conexao -> prepare("SELECT * FROM escritores WHERE email = :emailPost AND senha = :senhaPost");
-            $select -> execute([
+            $select -> execute([  //oque for escrito em cima será executado
                 ':emailPost' => $_POST["email"],
                 ':senhaPost' => $_POST["senha"]
             ]);
 
-            $escritor = $select->fetch(PDO::FETCH_ASSOC);
+            $escritor = $select->fetch(PDO::FETCH_ASSOC); //traforma as irformações de sql para array associativo
             $conexao = null;
 
-            if($escritor){
+            if($escritor){ // só ira entrar se os dados que ele escreveu foram certos
                 session_start();
                 $_SESSION["escritorLogado"] = $escritor;
 
